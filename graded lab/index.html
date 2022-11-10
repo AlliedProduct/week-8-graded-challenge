@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Week 8 lab</title>
+	  <!-- add the link tag to the style.css which will be in a folder -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+
+		<div id="h">
+			<h1>Graded lab exercise - week 8</h1>
+			<ol>
+				<li>Add 3 examples of JavaScript code</li>
+				<li>Create a repo in GitHub and add your project when finished</li>
+				<li>Save the link to the GitHub repo in a text document and upload it to Moodle</li>
+				<ul>
+					<li>Your link should look like this https://github/username/repoName.git</li>
+				</ul>
+			</ol>
+		</div>
+
+			<br />
+		    <br />
+			<div id="namebar">
+				<h3 id="theirname"></h3>
+
+				<form id="aForm">
+					<label>Enter a name</label>
+					<input type="text" id="text" />
+					<button type="button" onclick="NameGreeting();" name="button"> Finish</button>
+				</form>
+			</div>
+
+		<!-- add your JavaScript inside the section below -->
+	  <script type="text/javascript">
+			//this is a comment in JS
+			//add 3 examples of JavaScript code
+          function NameGreeting() {
+              var name = document.getElementById("text");
+              document.getElementById("theirname").innerHTML = "Hello " + name.value;
+              document.getElementById("aForm").style.display = "none";
+          }
+	  </script>
+	</body>
+</html>
